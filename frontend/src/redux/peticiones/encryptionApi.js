@@ -3,9 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 export const encryptionApiBack = createApi({
     reducerPath: 'encryption',
     baseQuery: fetchBaseQuery({
-        baseQuery: fetchBaseQuery({
-            baseUrl: 'https://file-encryption-app-production.up.railway.app/api/encryption',
-        }),
+        baseUrl: 'https://file-encryption-app-production.up.railway.app/api/encryption',
     }),
     endpoints: (builder) => ({
 
