@@ -18,9 +18,10 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
                 .allowedOrigins(
-                    "http://localhost:5173",
-                    "http://localhost:3000"  
-                )
+                        "http://localhost:5173",
+                        "http://localhost:3000",
+                        "https://file-encryption-app.vercel.app",
+                        "https://file-encryption-app-lpdelgadillo.vercel.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .exposedHeaders("Content-Disposition")
